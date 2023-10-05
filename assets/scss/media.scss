@@ -35,3 +35,31 @@
         display: none;
     }
 }
+@media(max-width:1265px){
+    .showcase_tt{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media(max-width:573px){
+    .showcase_left{
+        h1{
+            width: 100%;
+            font-size: 50px;
+        }
+        h3{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+        }
+
+    }
+}
+@media(max-width:360px){
+    .showcase_left{
+        div{
+            flex-direction: column;
+        }
+    }
+}
