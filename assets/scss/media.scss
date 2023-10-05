@@ -1,0 +1,37 @@
+@media (max-width: 1082px) {
+  .nav_link {
+    gap: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav_link {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(128, 128, 128);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  .open {
+    display: block;
+  }
+  #check:checked ~ .nav_link {
+    left: 0;
+  }
+}
+@media(max-width:1238px){
+    .nav_link{
+        gap: 15px;
+    }
+}
+@media(max-width:1126px){
+    .nav_btn{
+        display: none;
+    }
+}

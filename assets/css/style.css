@@ -1,3 +1,128 @@
+header {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 0px 0px 40px 40px;
+  background: var(--Linear, linear-gradient(103deg, #fceed5 6.43%, #fceed5 78.33%, #ffe7ba 104.24%));
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.nav_link a {
+  color: var(--primary-color-dark-blue, #003459);
+  font-family: SVN-Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.nav_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_btn .add {
+  display: flex;
+  width: 280px;
+  padding: 12px 20px 12px 16px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 46px;
+  background: var(--neutral-color-00, #fdfdfd);
+}
+.nav_btn .add input {
+  border: none;
+  outline: none;
+}
+.nav_btn button {
+  display: flex;
+  height: 44px;
+  padding: 14px 28px 10px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 57px;
+  background: var(--primary-color-dark-blue, #003459);
+  color: #fdfdfd;
+}
+
+.nav_eng select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#check {
+  display: none;
+}
+
+.open {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1082px) {
+  .nav_link {
+    gap: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav_link {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(128, 128, 128);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  .open {
+    display: block;
+  }
+  #check:checked ~ .nav_link {
+    left: 0;
+  }
+}
+@media (max-width: 1238px) {
+  .nav_link {
+    gap: 15px;
+  }
+}
+@media (max-width: 1126px) {
+  .nav_btn {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

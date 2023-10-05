@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <nav class="nav_title">
-                    
-                </nav>
-            </nav>
-        </div>
+      <div class="container">
+        <input type="checkbox" id="check" />
+        <nav class="navbar">
+          <nav class="nav_title">
+            <img src="./img/monite.png" alt="" />
+          </nav>
+          <nav class="nav_link">
+            <a href="#">Home</a>
+            <a href="#">Category</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+          <nav class="nav_btn">
+            <div class="add">    
+                <i class="fa-solid fa-magnifying-glass"></i
+                ><input placeholder="Search something here!" type="text" />
+            </div>
+            <button>Join the community</button>
+          </nav>
+          <nav class="nav_eng">
+            <select>
+              <option value="Eng">Eng</option>
+            </select>
+            <label class="open" for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+          </nav>
+        </nav>
+      </div>
     </header>
-</body>
+  </body>
 </html>
