@@ -45,7 +45,8 @@
     .showcase_left{
         h1{
             width: 100%;
-            font-size: 50px;
+            font-size: 40px;
+            align-self: start;
         }
         h3{
             width: 100%;
@@ -54,6 +55,13 @@
             width: 100%;
         }
 
+    }
+}
+@media(max-width:502px){
+    .showcase_left{
+        h1{
+            font-size: 30px;
+        }
     }
 }
 @media(max-width:360px){
@@ -76,5 +84,129 @@
 @media(max-width:649px){
     .cardlar{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:1492px){
+    .frends{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .showcase_left{
+        border-radius: 0;
+    }
+}
+@media(max-width:782px){
+    .showcase_left{
+        width: 100%;
+        h1{
+            width: 100%;
+            font-size: 35px;
+        }
+        h3{
+            width: 100%;
+            font-size: 25px;
+        }
+        p{
+            width: 100%;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width:1417px){
+    .rasmlar{
+        grid-template-columns: repeat(3,2fr);
+    }
+}
+@media(max-width:1110px){
+    .rasmlar{
+        grid-template-columns: repeat(2,2fr);
+    }
+}
+@media(max-width:744px){
+    .rasmlar{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card_title{
+        display: flex;
+    flex-direction: column;
+    }
+}
+
+@media(max-width:620px){
+    .rasm_tt{
+        width: 100%;
+    }
+}
+@media(max-width:1237px){
+    .img_bg{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:1330px){
+    .itlar{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:880px){
+    .itlar{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .dog_tt{
+        width: 390px;
+    }
+}
+@media(max-width:446px){
+    .dog_tt{
+        width: 100%;
+    }
+    .dog_bg{
+        img{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:1233px){
+    .foot_wrap{
+        flex-direction: column;
+    }
+    .foot_btn{
+        width: 100%;
+    }
+}
+@media(max-width:799px){
+    .foot_bg{
+        flex-direction: column;
+        width: 100%;
+    }
+    .foot_btn{
+       flex-direction: column;
+    }
+}
+@media(max-width:604px){
+    .foot_a{
+        gap: 15px;
+    }
+}
+@media(max-width:949px){
+    .foot_k{
+        flex-direction: column;
+    }
+}
+@media(max-width:627px){
+    .foot_wrap{
+        display: none;
+    }
+}
+@media(max-width:331px){
+    .foot_a{
+       gap: 0px;
+       display: none;
+    }
+    .foot_i{
+        gap: 8px;
     }
 }
